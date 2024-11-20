@@ -12,7 +12,7 @@ import { TextureLoader } from 'three';
 
 const DemoComputer = (props) => {
 
-    const screenTexture = useLoader(TextureLoader, 'public/assets/githubprofile.png');
+    const screenTexture = useLoader(TextureLoader, '/assets/githubprofile.png');
     screenTexture.flipY = false;
     const group = useRef();
     const { nodes, materials, animations } = useGLTF('/models/computer.glb');
