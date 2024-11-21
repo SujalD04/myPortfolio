@@ -67,7 +67,7 @@ export const myProjects = [
         desc: 'Flare is a modern, dynamic chat application designed for seamless communication. With features like real-time messaging, group chats, and personalized profiles. It\'s built with the latest web technologies to provide a smooth and responsive user experience across devices.',
         subdesc:
             'Built using React with Tailwind CSS, Flare combines the power of Firebase for real-time communication and Google Auth for secure sign-in, making it a reliable choice for instant messaging.',
-        href: 'https://github.com/SujalD04/Flare',
+        href: 'https://github.com/SujalD04/Flare_App',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/flare.png',
         logoStyle: {
