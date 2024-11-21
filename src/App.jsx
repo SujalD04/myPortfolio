@@ -22,15 +22,16 @@ const App = () => {
                 <StarsBackground/>
             </div>
 
-
             {/* Main content */}
-            <Navbar/>
-            <Hero/>
-            <About/>
-            <Projects/>
-            <Experience/>
-            <Contact/>
-            <Footer/>
+            <div className="overflow-hidden">
+                <Navbar/>
+                <Hero/>
+                <About/>
+                <Projects/>
+                <Experience/>
+                <Contact/>
+                <Footer/>
+            </div>
         </main>
     );
 }

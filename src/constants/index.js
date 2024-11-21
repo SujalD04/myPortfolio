@@ -23,6 +23,7 @@ export const navLinks = [
         id: 5,
         name: 'Resume',
         href: 'public/Sujal_Dixit_Resume.pdf',
+        download: true
     },
 ];
 
