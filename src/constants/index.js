@@ -138,9 +138,9 @@ export const myProjects = [
     },
     {
         title: 'Algorithm Visualizer',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        desc: 'Algorithm Visualizer is an interactive web application that allows users to visualize various algorithms in action.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+            'Built using React for a dynamic user interface and D3.js for powerful, scalable visualizations. Whether you\'re exploring sorting, searching, graph traversal, or dynamic programming, the website provides clear, step-by-step visualizations to help users grasp the concepts easily. Node.js powers the backend, ensuring smooth data handling.',
         href: 'https://github.com/SujalD04/Algorithm-Visualizer',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/algorithm.png',
