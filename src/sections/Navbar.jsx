@@ -2,18 +2,24 @@ import React, {useState} from 'react';
 import {navLinks} from "../constants/index.js";
 
 const NavItems = () => {
-    return(
+    return (
         <ul className="nav-ul">
-            {navLinks.map(({id, href, name}) => (
+            {navLinks.map(({ id, href, name }) => (
                 <li key={id} className="nav-li">
-                    <a href={href} className="nav-li_a" onClick={() => {}}>
+                    <a
+                        href={name === 'Resume' ? '/assets/Sujal_Dixit_Resume.pdf' : href}
+                        target={name === 'Resume' ? '_blank' : '_self'}
+                        className="nav-li_a"
+                        onClick={() => {}}
+                    >
                         {name}
                     </a>
                 </li>
             ))}
         </ul>
-    )
-}
+    );
+};
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
