@@ -56,7 +56,7 @@ const About = () => {
                                 backgroundImageOpacity={0.5}
                                 showAtmosphere={true}
                                 showGraticules={true}
-                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                                 labelsData={[{
                                     lat: 12.9716, lng: 77.5946,
