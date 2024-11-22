@@ -27,8 +27,7 @@ const About = () => {
                             <p className="grid-headtext">Hey, I'm Sujal!</p>
                             <p className="grid-subtext">
                                 I am a passionate college student aspiring to become a software developer, driven by my deep interest for coding and technology.
-                                My journey in Computer Science is fueled by a desire to learn, innovate, and contribute meaningfully to the tech world. On the side,
-                                I enjoy playing video games, staying active through sports, and exploring the vast expanse of the internet to discover new ideas and trends.
+                                My journey in Computer Science is fueled by a desire to learn, innovate, and contribute meaningfully to the tech world. 
                             </p>
                         </div>
                     </div>
