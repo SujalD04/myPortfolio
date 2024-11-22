@@ -47,15 +47,15 @@ const Contact = () => {
     return (
         <section className="c-space my-20" id="contact">
             <div className="relative min-h-screen flex items-center justify-center flex-col">
-                <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 min-h-screen xl:mt-[-50px] 2xl-mt-[-50px]" />
+                <img src="/assets/form.jpg" alt="terminal background" className="absolute inset-0 min-h-screen xl:mt-[10px] 2xl-mt-[10px] rounded-lg filter blur-sm" />
                 <div className="contact-container">
-                    <h3 className="head-text">Connect with Me</h3>
-                    <p className="text-lg text-white-600 mt-3">
+                    <h3 className="head-text mt-[-45px]">Connect with Me</h3>
+                    <p className="text-lg text-white-600 mt-1">
                         Feel free to reach out to me as I'm always looking to work with projects
                         or improvise your existing platforms. I will be much more than happy to help!
                         Looking forward to connect with you.
                     </p>
-                    <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+                    <form ref={formRef} onSubmit={handleSubmit} className="mt-2 flex flex-col space-y-7">
                         <label className="space-y-3">
                             <span className="field-label">Full Name</span>
                             <input
