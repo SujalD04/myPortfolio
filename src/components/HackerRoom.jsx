@@ -6,7 +6,7 @@ const HackerRoom = (props) => {
     const { nodes, materials } = useGLTF('/models/hacker-room.glb');
 
     // Load the screen image as a texture
-    const screenImage = new TextureLoader().load('/public/assets/linkedinhome.png');
+    const screenImage = new TextureLoader().load('/assets/linkedinhome.png');
 
     return (
         <group {...props} dispose={null}>
