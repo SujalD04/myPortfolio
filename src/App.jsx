@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
     return (
-        <main className="max-w-7xl mx-auto relative">
+        <main className="max-w-7xl mx-auto relative overflow-hidden">
             <Analytics />
             {/* Background wrapper */}
             <div
