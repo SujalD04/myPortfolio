@@ -1,16 +1,12 @@
 import React from 'react';
-import { useGLTF, useTexture } from '@react-three/drei';
+import { useGLTF } from '@react-three/drei';
+import { TextureLoader } from 'three';
 
 const HackerRoom = (props) => {
     const { nodes, materials } = useGLTF('/models/hacker-room.glb');
 
-    // Load textures
-    const monitorTexture = useTexture('textures/desk/monitor.png');
-    const screenTexture = useTexture('textures/desk/screen.png');
-
-    // Ensure textures are oriented correctly
-    monitorTexture.flipY = false;
-    screenTexture.flipY = false;
+    // Load the screen image as a texture
+    const screenImage = new TextureLoader().load('/public/assets/linkedinhome.png');
 
     return (
         <group {...props} dispose={null}>
@@ -24,9 +20,13 @@ const HackerRoom = (props) => {
 
             {/* Table */}
             <mesh geometry={nodes.table_table_mat_0_1.geometry} material={materials.table_mat} />
+
             {/* Computer */}
-            <mesh geometry={nodes.table_table_mat_0_2.geometry} material={materials.computer_mat}>
-                <meshBasicMaterial map={monitorTexture} toneMapped={false} />
+            <mesh geometry={nodes.table_table_mat_0_2.geometry} material={materials.computer_mat} />
+
+            {/* Image Overlay (screen image) */}
+            <mesh geometry={nodes.screen_screens_0.geometry}>
+                <meshBasicMaterial map={screenImage} toneMapped={false} transparent />
             </mesh>
 
             {/* Other components */}
@@ -37,11 +37,7 @@ const HackerRoom = (props) => {
             <mesh geometry={nodes.table_table_mat_0_7.geometry} material={materials.arm_mat} />
 
             {/* TV */}
-            <mesh geometry={nodes.table_table_mat_0_8.geometry} material={materials.tv_mat}>
-                <meshBasicMaterial map={monitorTexture} toneMapped={false} />
-            </mesh>
-
-            {/* Miscellaneous */}
+            <mesh geometry={nodes.table_table_mat_0_8.geometry} material={materials.tv_mat} />
             <mesh geometry={nodes.table_table_mat_0_9.geometry} material={materials.cables_mat} />
             <mesh geometry={nodes.table_table_mat_0_10.geometry} material={materials.props_mat} />
             <mesh geometry={nodes.table_table_mat_0_11.geometry} material={materials.ground_mat} />
