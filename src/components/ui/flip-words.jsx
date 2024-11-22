@@ -54,7 +54,7 @@ export const FlipWords = ({
                 }}
                 className={cn(
                     // Add styles for centering and responsiveness
-                    "z-10 inline-block relative text-center text-neutral-900 dark:text-neutral-100 px-2 max-w-full overflow-hidden",
+                    "z-10 inline-block relative text-center text-neutral-900 dark:text-[#abcdfc] px-2 text-[#abcdfc] max-w-full overflow-hidden",
                     className
                 )}
                 key={currentWord}>
