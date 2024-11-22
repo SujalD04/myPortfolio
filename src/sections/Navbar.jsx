@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const toggleMenu = () => setIsOpen(prevIsOpen => !prevIsOpen);
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm shadow-2xl">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-start py-5 mx-auto c-space">
                     <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
